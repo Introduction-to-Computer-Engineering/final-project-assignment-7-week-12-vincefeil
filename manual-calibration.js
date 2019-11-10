@@ -1,3 +1,5 @@
+//program uses a Spark Fun soil moisture sensor to take readings and display on a bar gragh.
+//set variable to 0
 let moisture_reading: number = 0
 // bar gragh display function
 function display () {
