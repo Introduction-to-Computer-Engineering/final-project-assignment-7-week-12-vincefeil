@@ -27,7 +27,7 @@ This code conbines the external LEDs and the screen saver Arrows. It turns the t
 ## digital-in.js
 ### Operation
 
-This code uses an external button to turn external and onboard LEDs on and off. When the button is pressed the LEDs come on and stay on until the button is pressed again. Each time the button is pressed the LEDs turn on or off depending on the state they are in at the time.
+This code uses an external button to turn external and onboard LEDs on and off. When the button is pressed the LEDs come on and stay on until the button is pressed again. Each time the button is pressed the LEDs turn on or off depending on the state they are in at the time. I did not need a pull up resistor. 
 
 [digital-in.js](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-7-week-12-vincefeil/blob/master/digital-in.js)
 
@@ -36,7 +36,7 @@ This code uses an external button to turn external and onboard LEDs on and off. 
 ## manual-calibration.js
 ### Operation
 
-This code uses a Spark Fun soil moisture sensor to read the dampness of a material and shows a bar graph similar to the signal bar graph on a cel phone. The reading from the sensor is remaped to give a range of zero to four and uses this range for the display output. It was calibrated manualy by observing the reading of dry and saturated through the serial port. I used my finger in the video to demonstrate the change in moisture that changes the display.
+This code uses a Spark Fun soil moisture sensor to read the dampness of a material and shows a bar graph similar to the signal bar graph on a cel phone. The reading from the sensor is remaped to give a range of zero to four and uses this range for the display output. It was calibrated manualy by observing the reading of dry and saturated through the serial port. I used my finger in the video to demonstrate the change in moisture that changes the display. I needed a pull down resistor. Without it the low readings were not stable.
 
 [manual-calibration.js](https://github.com/Introduction-to-Computer-Engineering/final-project-assignment-7-week-12-vincefeil/blob/master/manual-calibration.js)
 
@@ -45,7 +45,7 @@ This code uses a Spark Fun soil moisture sensor to read the dampness of a materi
 ## auto-calibration.js
 ### Operation
 
-This program starts by asking the user to to take three low moisture readings(sensor dry) and three high moisture readings(sensor in water). At start the disply shows an arrow pointing down to signal the low readings. The sensor is left dry and the user pushes and holds the A button until the display changes to the number one. This tells the user he has taken the first low reading. This is repeated two more times until the display shows the number three. At this point the display will change to an up arrow. Now the sensor is placed in water and the same button display sequence is repeated. After the three high readings are completed the display will say "Calibration Done."
+This program starts by asking the user to to take three low moisture readings(sensor dry) and three high moisture readings(sensor in water). At start the disply shows an arrow pointing down to signal the low readings. The sensor is left dry and the user pushes and holds the A button until the display changes to the number one. This tells the user he has taken the first low reading. This is repeated two more times until the display shows the number three. At this point the display will change to an up arrow. Now the sensor is placed in water and the same button display sequence is repeated. After the three high readings are completed the display will say "Calibration Done." I needed a pull down resistor. Without it the low readings were not stable.
 
 Now the program does the same operations on the input as manual-calibration.js. A wet paper towel can be used to show the working display which is modeled after a cel phone signal display.
 
